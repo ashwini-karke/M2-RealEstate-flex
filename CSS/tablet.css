@@ -101,4 +101,9 @@
 	border-right: 45px solid transparent;
 	border-bottom: 50px solid #4a6084;
 }
+.form-table
+{
+    display:flex ;
+    align-items: center;
+}
 }
