@@ -9,6 +9,9 @@
         <link rel="stylesheet" href="CSS/main.css">
         <link rel="stylesheet" href="CSS/mobile.css">
         <link rel="stylesheet" href="CSS/tablet.css">
+        <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+        <script src="https://use.fontawesome.com/6fac2730d4.js"></script>
+
     </head>
     <body>
        <div class="container">
@@ -60,7 +63,7 @@
        <div class="container address">
         <div class="inner-container">
             <div class="animation">
-                <div class="date2">19 SEP<br>2&nbsp;0&nbsp;1&nbsp;6</div>
+                <div class="date2"><strong>19 SEP</strong><strong>2&nbsp;0&nbsp;1&nbsp;6</strong></div>
                 <div class="vertical-bar"><p>|</p></div>
                 <div class="moving-txt">
                     <marquee><strong>Sale: </strong>Kaifan, Land, 500sqm, 20 Sep 2016 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| &nbsp;&nbsp;&nbsp;&nbsp;<strong>Wanted: </strong>Nuzha, House, 750sqm, 21 Sep 2016 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| &nbsp;&nbsp;&nbsp;&nbsp;<strong>Rent: </strong>Faiha, Flat, 3 BR, 21 Sep 2016</marquee>
@@ -75,7 +78,7 @@
         </div>
     </div>
     <div class="img-class  inner-container">
-        <div class="img1">
+        <div class="img1" id="first-block">
             <img src="Assests/img1.png" alt="My Image">
             <p>Instant Value Estimator</p>
         </div>
@@ -114,7 +117,7 @@
                     <div class="section1 middle-dropdown2">
                         <label for="cars" class="dropdown">Street Type</label>
                         <select name="cars" id="cars">
-                            <option value="volvo">Volvo</option>
+                            <option value="volvo">Street type name</option>
                             <option value="saab">Saab</option>
                             <option value="mercedes">Mercedes</option>
                             <option value="audi">Audi</option>
@@ -123,7 +126,7 @@
                     <div class="section1">
                         <label for="cars" class="dropdown">Plot Location</label>
                         <select name="cars" id="cars">
-                            <option value="volvo">Volvo</option>
+                            <option value="volvo">Back Plot</option>
                             <option value="saab">Saab</option>
                             <option value="mercedes">Mercedes</option>
                             <option value="audi">Audi</option>
@@ -131,71 +134,79 @@
                     </div>   
                 </div>
                 
-                <div class="section">
+                <div class="section middle-section">
                     <div class="section2">
                         <label for="fname">Back front length</label>
-                        <input type="text" id="land-size" name="fname" value="250">
+                        <input type="text" id="land-size" name="fname" value="30">
                     </div>
                 </div>
-                <div class="section">
+                <div class="section middle-section">
                     <div class="area">
                         <div class="radio-button">
                             <p class="property">Property Type</p>
                         </div>
-                        <div class="radio">
-                            <div class="radio1">
-                                <input id="radio-1" class="radio-custom" name="radio-group" type="radio" checked>
-                                <label for="radio-1" class="radio-custom-label">Land</label>
-                                <!-- <label for="land" class="radio-label">
-                                    <input type="radio" id="land" name="property-type" value="Land" class="radio-input" checked >
-                                    <div class="radio-radio"></div>
-                                    Land
-                                </label> -->
-                            </div>
-                            <div class="radio1">
-                                <input id="radio-2" class="radio-custom"name="radio-group" type="radio">
-                                <label for="radio-2" class="radio-custom-label">House</label>
-                                <!-- <label for="house" class="radio-label">
-                                    <input type="radio" id="house" name="property-type" value="House" class="radio-input" >
-                                    <div class="radio-radio"></div>
-                                    House
-                                </label> -->
-                            </div>
+                        <div>
+                            <input id="radio-1" class="radio-custom" name="radio-group" type="radio" checked>
+                            <label for="radio-1" class="radio-custom-label">Land</label>
+                        </div>
+                        <div>
+                            <input id="radio-2" class="radio-custom"name="radio-group" type="radio">
+                            <label for="radio-2" class="radio-custom-label">House</label>
                         </div>
                     </div>
                 </div>
                 <div class="section">
                     <div class="section1">
-                        <label for="cars" class="dropdown">Area</label>
+                        <label for="cars" class="dropdown">Property Status</label>
                         <select name="cars" id="cars">
-                            <option value="volvo">Volvo</option>
+                            <option value="volvo">Developed Building</option>
                             <option value="saab">Saab</option>
                             <option value="mercedes">Mercedes</option>
                             <option value="audi">Audi</option>
                         </select>
                     </div>
                     <div class="section1 middle-dropdown">
-                        <label for="cars" class="dropdown">Area</label>
+                        <label for="cars" class="dropdown">House Age (years)</label>
                         <select name="cars" id="cars">
-                            <option value="volvo">Volvo</option>
+                            <option value="volvo">1-5</option>
                             <option value="saab">Saab</option>
                             <option value="mercedes">Mercedes</option>
                             <option value="audi">Audi</option>
                         </select>
                     </div>
                     <div class="section1 middle-dropdown2">
-                        <label for="cars" class="dropdown">Area</label>
+                        <label for="cars" class="dropdown">Finishing Quality</label>
                         <select name="cars" id="cars">
-                            <option value="volvo">Volvo</option>
+                            <option value="volvo">Luxurious</option>
                             <option value="saab">Saab</option>
                             <option value="mercedes">Mercedes</option>
                             <option value="audi">Audi</option>
                         </select>
                     </div>
                     <div class="section1">
-                        <label for="cars" class="dropdown">Area</label>
+                        <label for="cars" class="dropdown">Basement</label>
                         <select name="cars" id="cars">
-                            <option value="volvo">Volvo</option>
+                            <option value="volvo">Yes</option>
+                            <option value="saab">Saab</option>
+                            <option value="mercedes">Mercedes</option>
+                            <option value="audi">Audi</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="section">
+                    <div class="section1">
+                        <label for="cars" class="dropdown">No. of Floors</label>
+                        <select name="cars" id="cars">
+                            <option value="volvo">1</option>
+                            <option value="saab">Saab</option>
+                            <option value="mercedes">Mercedes</option>
+                            <option value="audi">Audi</option>
+                        </select>
+                    </div>
+                    <div class="section1 middle-dropdown">
+                        <label for="cars" class="dropdown">Specification List 1</label>
+                        <select name="cars" id="cars">
+                            <option value="volvo">Specification Name</option>
                             <option value="saab">Saab</option>
                             <option value="mercedes">Mercedes</option>
                             <option value="audi">Audi</option>

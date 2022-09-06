@@ -20,7 +20,7 @@
     {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-evenly;
     }
     .navigation-bar
     {
@@ -41,10 +41,12 @@
     .img-class
     {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         margin-top: -165px;
         align-items: center;
-        gap: 15px;
+        gap: 62px;
+        flex-wrap: wrap;
+        justify-content: space-around;
     }
     .layer1
     {
@@ -55,8 +57,11 @@
     .section
     {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
+        flex-wrap: wrap;
+        gap: 47px;
+        justify-content: space-around;        
     }
     .section9
     {
@@ -86,6 +91,9 @@
     height: 72px;
     background-color:  #d6ab28;
 }
+.img-txt {
+    font-size: 35px;
+}
 .img-class2 {
     margin-top: 30px;
 }
@@ -97,7 +105,7 @@
     content: "";
     position: absolute;
     top: 23px;
-    left: 345px; 
+    left: 215px; 
     transform: translate(-1rem, -100%);
     width: 0;
 	height: 0;
@@ -109,5 +117,39 @@
 {
     display:flex ;
     align-items: center;
+}
+.section6 {
+    display: flex;
+    flex-direction: row;
+    padding: 15px 88px;
+}
+form h2
+{
+    padding-left: 88px;
+}
+.button-section {
+    padding-right: 88px;
+}
+.output p
+{
+    padding-left: 88px;
+}
+.middle-section
+{
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 88px
+}
+.last {
+    margin: 20px 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+}
+.animation
+{
+    margin: 0px 88px;
 }
 }

@@ -25,6 +25,10 @@
     font-family: OpenSans-Bold;
     src: url("../Fonts/open-sans.bold.ttf");
 }
+@font-face {
+    font-family: FontAwesome;
+    src: url("../font-awesome/css/font-awesome.min.css");
+}
 body
 {
     text-align: center;
@@ -92,13 +96,13 @@ body
     flex-basis: 100%;
     align-items: center;
     justify-content: center;
-    gap: 7px;
+    gap: 12px;
 }
 .navbar ul
 {
     display: inline-flex;
     flex-wrap: wrap;
-    gap: 13px;
+    gap: 15px;
 }
 .navbar li
 {
@@ -114,7 +118,7 @@ body
     justify-content: center;
     display: inline-flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 12px;
 }
 .login-reg
 {
@@ -159,7 +163,7 @@ body
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 7px;
 }
 .icon
 {
@@ -221,27 +225,28 @@ body
 }
 .animation
 {
-    padding: 4px 0px;
+    padding: 7px 0px;
     width: 100%;
     display: flex;
     flex-direction: row;
     font-size: 16px;
-    font-family: 'Lato-Bold';
+    font-family: 'Lato-Regular';
     color: #ffffff;
     align-items:center ;
-    justify-content: space-between;
+    letter-spacing: 0.8px;
+    /* justify-content: space-between; */
     /* margin: 0px 36px; */
 }
 .date2
 {
     display: flex;
+    flex-direction: column;
     justify-content: flex-start;
-
+    margin-right: 20px;
 }
 .vertical-bar
 {
     display: flex;
-    width: 0px;
 }
 .vertical-bar p
 {
@@ -251,6 +256,7 @@ body
 .moving-txt
 {
     display: flex;
+    width: 100%;
 }
 .layer1
 {
@@ -319,7 +325,7 @@ body
 .form1
 {
     background-color: #4a6084;
-    margin-top: 26px;
+    margin-top: 30px;
 }
 form
 {
@@ -361,6 +367,7 @@ form
     justify-content: flex-start;
     font-size: 18px;
     font-family: 'Roboto';
+    padding-bottom: 10px;
 }
 .section1 input
 {
@@ -373,6 +380,8 @@ form
     align-items: center;
     font-size: 15px;
     font-family: 'Roboto';
+    color: #292929;
+    padding-left: 10px;
     color: #292929;
 }
 form h2
@@ -390,6 +399,7 @@ form h2
     justify-content: flex-start;
     font-size: 18px;
     font-family: 'Roboto';
+    padding-bottom: 10px;
 }
 .section2 input
 {
@@ -399,6 +409,8 @@ form h2
     border-color: #fffefe;
     font-size: 15px;
     font-family: 'Roboto';
+    color: #292929;
+    padding-left: 10px;
     color: #292929;
 }
 .area
@@ -451,7 +463,7 @@ form h2
     font-size: 20px;
     font-family: 'OpenSans-Bold';
     color: #ffffff;
-    margin: 6px 30px
+    margin: 3px 30px
 }
 .section7
 {
@@ -467,16 +479,18 @@ form h2
 }
 .button-section button
 {
+    width: 184px;
+    height: 50px;
     font-family: OpenSans-Bold;
     font-size: 16px;
     font-weight: bold;
-    padding-left: 0px;
+   
     background-color: #032149;
     border: #032149;
     color:#fff;
     border-color: #032149;
     border-radius: 3px;
-    padding: 14px 20px;
+
 }
 .section8
 {
@@ -523,14 +537,17 @@ form h2
     height: 66px;
     background-color: #f7f7f7;
 }
-
+.c1 p
+{
+    margin-top: 35px;
+}
 .c1
 {
     /* width: 150px; */
     /* margin:1px; */
     /* padding: 15px 0px 15px 10px; */
     width:292px;
-    height: 74px;
+    height: 88px;
     background-color:  #d6ab28;
 }
 .l1
@@ -566,7 +583,7 @@ form h2
 {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: flex-start;
     align-items: flex-start;
 }
 .icon-field2 .icon2
@@ -727,4 +744,54 @@ form h2
     flex-direction: row;
     justify-content: space-around;
     width: 100%;
+}
+.radio-custom {
+    opacity: 0;
+    position: absolute;   
+}
+
+.radio-custom, .radio-custom-label {
+    display: flex;
+    /* vertical-align: middle; */
+    margin: 5px;
+    cursor: pointer;
+}
+
+.radio-custom-label {
+    position: relative;
+    color: #fffefe;
+    font-family: 'Roboto';
+    font-size: 18px;
+}
+
+.radio-custom + .radio-custom-label:before {
+    content: '';
+    background: #d6ab28;
+    border: 2px solid #d6ab28;
+    display: flex;
+    vertical-align: middle;
+    width: 15px;
+    height: 15px;
+    padding: 2px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+
+.radio-custom + .radio-custom-label:before {
+    border-radius: 50%;
+}
+
+.radio-custom:checked + .radio-custom-label:before {
+    content: "\f00c";
+    font-family: 'FontAwesome';
+    color: #ffffff;
+}
+
+.radio-custom:focus + .radio-custom-label {
+  outline: 1px solid #4a6084; 
+}
+#first-block
+{
+    background-color: #4a6084;
 }
